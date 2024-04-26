@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  /* background-color: rgb(20, 3, 35); */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  /* Apply gradient to the text */
+  background: linear-gradient(270deg, #68AEF2, #3554FF);
+  /* Set background-clip to text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Set color to transparent to make the text visible */
+  color: transparent;
+}
+
+.placeholder-black::placeholder {
+  color: rgb(52, 44, 44);
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side,#474bff 94%,#0000) top/9px 9px no-repeat,
+         conic-gradient(#0000 30%,#474bff);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+  animation: spinner-c7wet2 1s infinite linear;
+}
+
+/* CSS for Navbar component */
+.nav-link {
+  border-bottom: 4px solid transparent; /* Transparent border initially */
+  transition: border-bottom-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+  border-bottom-color: #1E90FF; /* Change border color on hover */
+}
+
+/* CSS for list */
+.custom-list {
+  list-style-type: disc; /* Use disc bullets */
+  list-style-position: inside; /* Place bullets inside the list item */
+  list-style-size: 2px; /* Adjust bullet size as needed */
+}
+
+
+.custom-date-time-picker {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input:disabled {
+  background-color: #f5f5f5;
+  color: #999;
+}
